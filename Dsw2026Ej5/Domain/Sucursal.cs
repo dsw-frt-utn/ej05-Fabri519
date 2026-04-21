@@ -19,6 +19,8 @@ public class Sucursal
         this.responsable = responsable;
     }
 
+
+   
     public string GetCodigo()
     {
         return codigo;

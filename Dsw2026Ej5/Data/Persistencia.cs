@@ -44,10 +44,28 @@ public class Persistencia
         Vehiculos.Add(v3);
         Vehiculos.Add(v4);
     }
+
+   
+
+    public static void AgregarVehiculo(Vehiculo vehiculo)
+    {
+        Vehiculos.Add(vehiculo);
+    }
     public static List<Vehiculo> GetVehiculos()
     {
         return Vehiculos;
     }
+
+    public static List<Sucursal> GetSucursales()
+    {
+        return Sucursales;
+    }
+
+    public static Sucursal? GetSucursalPorCodigo(string codigo)
+    {
+        return Sucursales.Find(s => s.GetCodigo() == codigo);
+    }
+
 
     public static Vehiculo? GetVehiculo(string patente)
     {
